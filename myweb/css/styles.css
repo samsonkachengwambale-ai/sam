@@ -1,0 +1,152 @@
+/* Simple CSS for my personal website */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f6fb;
+  color: #222;
+  margin: 0;
+  line-height: 1.5;
+}
+
+header, footer {
+  background-color: #034694;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+nav {
+  background-color: #222;
+  padding: 12px;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  margin: 8px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+main {
+  max-width: 900px;
+  margin: auto;
+  padding: 15px;
+}
+
+section {
+  background-color: white;
+  margin: 15px 0;
+  padding: 18px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+h1, h2 {
+  color: #034694;
+}
+
+header h1 {
+  color: white;
+}
+
+img, video {
+  max-width: 100%;
+  height: auto;
+}
+
+.photo-gallery img {
+  width: 100%;
+  margin-top: 8px;
+}
+
+figure {
+  margin: 15px 0;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #999;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #dbeafe;
+}
+
+input, textarea, select {
+  width: 100%;
+  max-width: 500px;
+  padding: 8px;
+  margin: 5px 0 12px;
+  box-sizing: border-box;
+}
+
+button, .hero-link {
+  background-color: #034694;
+  color: white;
+  border: none;
+  padding: 10px;
+  margin: 5px 3px 5px 0;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+}
+
+button:hover, .hero-link:hover {
+  background-color: #022e60;
+}
+
+a:focus, button:focus, input:focus, textarea:focus, select:focus {
+  outline: 2px solid orange;
+}
+
+.gallery-controls {
+  margin: 10px 0;
+}
+
+.project-card {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.form-feedback, .form-preview {
+  overflow-wrap: anywhere;
+}
+
+body.dark-mode {
+  background-color: #222;
+  color: white;
+}
+
+body.dark-mode section, body.dark-mode .project-card {
+  background-color: #333;
+  color: white;
+}
+
+body.dark-mode h2 {
+  color: #9ec5ff;
+}
+
+@media (max-width: 600px) {
+  nav a {
+    display: inline-block;
+    margin: 5px;
+  }
+
+  main {
+    padding: 8px;
+  }
+
+  section {
+    padding: 12px;
+  }
+}

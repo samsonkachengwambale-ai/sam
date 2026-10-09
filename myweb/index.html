@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Samson K. Mbale's personal website and web development learning journey.">
+  <title>Samson Mbale | Web Technologies Portfolio</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<header class="site-header" id="top">
+  <div class="header-inner">
+    <p class="eyebrow">ICT251 · ACTIVITY 3</p>
+    <h1>Samson K. Mbale</h1>
+    <p class="intro">Computer Science student | Football, music and reading</p>
+    <p><a class="hero-link" href="#projects">View My Skills</a> 
+  </div>
+</header>
+<nav class="site-nav" aria-label="Main navigation">
+  <a href="#about">About Me</a><a href="#hobbies">My Hobbies</a>
+  <a href="#learning-plan">My Learning Plan</a><a href="#photos">My Photos</a>
+  <a href="#media">My Media</a><a href="#projects">Projects / Skills</a><a href="#contact">Contact</a>
+</nav>
+<main class="page-content">
+  <section class="content-section" id="about">
+    <h2>About Me</h2>
+    <p>My name is Samson K. Mbale, and I am a student who is interested in learning how technology can solve everyday problems. I enjoy discovering new things, practising what I learn, and improving my skills step by step. This website is part of my Web Technologies activity, and it gives me a chance to practise building a structured web page with HTML and CSS. Outside my studies, I enjoy football, music, and reading. I hope to become more confident at creating useful, attractive, and accessible websites.</p>
+  </section>
+  <section class="content-section" id="hobbies">
+    <h2>My Hobbies</h2><p>These are three activities I enjoy in my free time:</p>
+    <ul class="hobby-list"><li>Playing and following football</li><li>Listening to music</li><li>Reading books and interesting material</li></ul>
+  </section>
+  <section class="content-section" id="learning-plan">
+    <h2>My Learning Plan</h2>
+    <p>I will improve my web development skills by following a simple plan and practising consistently.</p>
+    <ol class="steps-list">
+      <li>Review HTML structure, semantic elements, links, images, and forms.</li>
+      <li>Practise CSS selectors, the box model, colours, spacing, and typography.</li>
+      <li>Build a responsive page, test it at phone width, and fix layout problems.</li>
+      <li>Validate my HTML and ask a classmate to test the links and media players.</li>
+    </ol>
+    <div class="table-wrap"><table>
+      <caption>Weekly Web Learning Plan</caption>
+      <thead><tr><th scope="col">Day</th><th scope="col">Topic</th><th scope="col">Practice task</th></tr></thead>
+      <tbody>
+        <tr><td>Monday</td><td>HTML basics</td><td>Create headings, paragraphs, lists, and links.</td></tr>
+        <tr><td>Wednesday</td><td>CSS styling</td><td>Style colours, spacing, borders, and fonts.</td></tr>
+        <tr><td>Friday</td><td>Media and forms</td><td>Add images, audio, video, and a required contact form.</td></tr>
+        <tr><td>Saturday</td><td>Responsive testing</td><td>Test the page at phone width and correct issues.</td></tr>
+      </tbody>
+    </table></div>
+    <p class="resource-link">Learning resource: <a href="https://developer.mozilla.org/en-US/docs/Learn" target="_blank" rel="noopener noreferrer">MDN Learn Web Development</a>.</p>
+  </section>
+  <section class="content-section" id="photos">
+    <h2>My Photos</h2>
+    <p class="section-note">These photos show Chelsea Football Club, a team I enjoy following.</p>
+    <div class="gallery-controls"><button type="button" id="previousPhoto">Previous</button><span id="photoCounter">Photo 1 of 3</span><button type="button" id="nextPhoto">Next</button></div>
+    <div class="photo-gallery" id="photoGallery">
+      <figure class="gallery-photo"><img src="images/photo1.jpg" alt="Chelsea Football Club stadium"><figcaption>Stamford Bridge, home of Chelsea Football Club.</figcaption></figure>
+      <figure class="gallery-photo"><img src="images/photo2.jpg" alt="Chelsea Football Club team photo"><figcaption>A Chelsea Football Club team photograph.</figcaption></figure>
+      <figure class="gallery-photo"><img src="images/photo3.jpg" alt="Chelsea Football Club badge on a shirt"><figcaption>The Chelsea Football Club badge.</figcaption></figure>
+    </div>
+  </section>
+  <section class="content-section" id="media">
+    <h2>My Media</h2>
+    <div class="media-item"><h3>Video Introduction</h3>
+      <video controls preload="metadata"><source src="videos/intro.mp4" type="video/mp4">Your browser does not support video.</video>
+      <p><strong>Written summary:</strong> This video introduces me, my interests, and my goal of learning HTML and CSS. For the final submission, record your own 30–60 second introduction that states your name, programme, and one web skill you hope to learn.</p>
+    </div>
+    <div class="media-item"><h3>Audio: My Hobbies and Web Technologies</h3>
+      <audio controls preload="metadata"><source src="videos/voice.mp3" type="audio/mpeg">Your browser does not support audio.</audio>
+      <p>This short recording introduces me and describes my hobbies—football, music, and reading—and my interest in learning to build websites.</p>
+    </div>
+  </section>
+
+  <section class="content-section" id="projects">
+    <h2>Projects / Skills</h2>
+    <p>Here are three skills I am practising in Web Technologies.</p>
+    <div class="project-list">
+      <article class="project-card"><h3>HTML Page</h3><p>Using headings, paragraphs, links and lists to organise a webpage.</p></article>
+      <article class="project-card"><h3>CSS Styling</h3><p>Adding colours, spacing, borders and responsive layouts.</p></article>
+      <article class="project-card"><h3>JavaScript Basics</h3><p>Responding to button clicks and updating content on a webpage.</p></article>
+    </div>
+    <button type="button" id="detailsButton" aria-expanded="false">Show More Details</button>
+    <p id="projectDetails" hidden>These examples show the basic skills I am learning as I improve this student portfolio.</p>
+  </section>
+
+  <section class="content-section" id="contact">
+    <form action="#" method="get">
+      <div class="form-field"><label for="name">Name</label><input type="text" id="name" name="name" autocomplete="name" required></div>
+      <div class="form-field"><label for="email">Email address</label><input type="email" id="email" name="email" autocomplete="email" required></div>
+      <div class="form-field"><label for="topic">Topic</label><select id="topic" name="topic"><option value="web-development">Web development</option><option value="football">Football</option><option value="feedback">Website feedback</option><option value="other">Other</option></select></div>
+      <div class="form-field"><label for="message">Message</label><textarea id="message" name="message" rows="5" required></textarea></div>
+      <button type="submit">Submit message</button>
+    </form>
+    <div id="formPreview" class="form-preview" aria-live="polite"></div>
+  </section>
+</main>
+<footer class="site-footer"><p>&copy; 2026 Samson K. Mbale · ICT251 Web Technologies</p><p><a href=https://github.com/samsonkachengwambale-ai/sam/upload/main target="_blank" rel="noopener noreferrer">View Source on GitHub (add your repository link)</a></p><a href="#top">Back to top</a></footer>
+<script src="js/script.js" defer></script>
+</body>
+</html>
